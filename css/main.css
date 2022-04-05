@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrap{
+    max-width: 1600px;
+    margin: auto;
+}
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+#menu-a{
+    text-decoration: none;
+    color: black;
+}
+#menu-a:hover{
+    color: rgb(156, 63, 63);
+    font-weight: 800;
+}
+.menu{
+    flex: 6;
+    justify-content: center;
+    display: flex;
+}
+.basket{
+    display: flex;
+    flex: 1.5;
+    justify-content: flex-end;
+}
+.goods{
+    margin-top: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    animation: opac 3.4s;
+}
+#btn{
+    width: 15vw;
+    height: 4vw;
+    font-size: 1.7vw;
+    border: none;
+    background: #c09393;
+    border-radius: 5px;
+    color: white;
+    transition: .4s;
+}
+#btn:hover{
+    color:#c09393 ;
+    background-color: white;
+    transition: .4s;
+}
+#elem{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+#photo-matebook{
+    width: 100%;
+    margin-top: -40px;
+}
+.btn2{
+    margin-left: 20px;
+}
+#text-desc{
+    font-size: 3vw;
+}
+#text-desc-2{
+    font-size: 1.7vw;
+    animation: col 2s infinite;
+}
+.menu-mobile{
+    display: none;
+}
+footer{
+    height: 150px;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+}
+#phon{
+    text-decoration: none;
+    color: white;
+}
+#phone-call{
+    width: 150px;
+    background: #c09393;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    animation: btn 2s infinite;
+}
+#content{
+    width: 0px;
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+    scroll-behavior: unset;
+}
+#close{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: 30px;
+    color: tomato;
+}
+#close:hover{
+    color: yellow;
+}
+#close:active{
+    color: rgb(126, 26, 8);
+}
+/*  */
+@keyframes btn{
+    0%{
+        box-shadow: 0px 0px 0px;
+    }
+    50%{ 
+        box-shadow: 1px 1px 50px;
+    }
+    100%{
+        box-shadow: 0px 0px 0px;
+    }
+}
+@keyframes opac{
+    0%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes col{
+    0%{
+        color: black
+    }
+    100%{
+        color: tomato;
+    }
+}
