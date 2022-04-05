@@ -3,7 +3,7 @@ var content = document.getElementById('content');
 var close = document.getElementById('close');
 
 menu.onclick = function(){
-    content.style.width = '100%';
+    content.style.width = '80%';
 }
 
 close.onclick = function(){
