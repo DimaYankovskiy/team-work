@@ -118,7 +118,6 @@ footer{
     justify-content: flex-end;
     margin-right: 20px;
     font-size: 30px;
-    color: tomato;
 }
 #close:hover{
     color: yellow;
